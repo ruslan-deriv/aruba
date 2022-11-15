@@ -1,0 +1,263 @@
+version 8.6.0.0-8.6.0
+virtual-controller-country BY
+virtual-controller-key 26f18220017fb5f874671526b9922d66e9aaa6f320ed48d936
+name DerivBYVC
+virtual-controller-ip 192.168.41.20
+terminal-access
+ntp-server Time1.google.com
+clock timezone Minsk 03 00
+rf-band all
+
+allow-new-aps
+
+allowed-ap bc:9f:e4:cb:62:41
+allowed-ap bc:9f:e4:cb:78:d9
+allowed-ap bc:9f:e4:cb:77:56
+allowed-ap bc:9f:e4:cb:76:45
+allowed-ap bc:9f:e4:cb:63:97
+allowed-ap bc:9f:e4:cb:77:62
+allowed-ap bc:9f:e4:cb:62:08
+allowed-ap bc:9f:e4:cb:67:de
+
+
+
+arm
+ wide-bands 5ghz
+ 80mhz-support
+ min-tx-power 9
+ max-tx-power 127
+ band-steering-mode prefer-5ghz
+ air-time-fairness-mode default-access
+ channel-quality-aware-arm-disable
+ client-aware
+ scanning
+
+rf dot11g-radio-profile
+ max-distance 0
+ max-tx-power 9
+ min-tx-power 6
+ disable-arm-wids-functions off
+ free-channel-index 40
+
+rf dot11a-radio-profile
+ max-distance 0
+ max-tx-power 18
+ min-tx-power 12
+ disable-arm-wids-functions off
+
+
+syslog-level warn ap-debug 
+syslog-level warn network 
+syslog-level warn security 
+syslog-level warn system 
+syslog-level warn user 
+syslog-level warn user-debug 
+syslog-level warn wireless 
+
+
+
+extended-ssid
+
+
+
+
+
+
+
+
+
+
+
+
+
+user 10:3d:1c:ce:68:00 ff8d865841b59a99a0fe87508e557a449487f09c5f481f4a0fb4bcf9f4edd132 radius
+user 88:66:5a:37:fc:1e 026726035d76bec1f31088debb1a62edabfe62c90da4561c9501bfef04087158 radius
+user 00:17:c8:b2:c0:10 c89398b84da0ec71dd48cc46209e3ed74e32e9f12ff533d836bdaf27f2067311 radius
+user 14:7d:da:75:7c:38 7867ba16238402ecb90db31196d8fd96269ac7a59cd9c2f97116dd0d9a725a9a radius
+user 14:7d:da:75:7c:d8 690a46fefba3a3395a6b2131a4f8bf826a88418d88c675cedd1621fbf6c07863 radius
+user 14:7d:da:75:98:b5 774e15806236545f4e1094f244595ca5abfa73a1e43410a54fc0dfe4fa88f3e6 radius
+user 14:7d:da:7d:66:e0 39836e0b66ec3e752573175558ff4a569f678021465482df48d224a47ab8a8cd radius
+user 14:7d:da:7d:77:53 1a5cb575234d8a7d16cbaf623130336d5797d368c247cb889b134b8a131ae9b4 radius
+user 14:7d:da:7d:80:2d 478b98a074c93920443d715fe74bd1a300e250d77eb64a8fefb3e4186b8ba661 radius
+user 14:7d:da:7d:82:87 92a1cc40a1179e359a87524c997ea0b351cb2dcba165d4d8832efb8d68a4103a radius
+user 14:7d:da:e4:c9:c7 04fb8792f53d83919817d76067a89c246e21893db8e44effb58f797050c52e04 radius
+user 14:7d:da:e4:cb:70 d949c908cac811e6bc8454ce6ce61d241e4d8192facfad244cba4aa67b64d01c radius
+user 14:98:77:44:49:5f db54c1f95fb356a04779d5301d605a4fcac344375770867417ecaaabf9ce7b72 radius
+user 44:bb:3b:00:3d:b4 b562ada16c0a28fa55fe0d6b11563fe8cee0c5f84ff3896e0d41e1c55189fdb2 radius
+user 5c:80:b6:72:85:3f 0cc2eff18895a2632612c7f149cd5ac2236a81d149ef38aeb9503a76955c4544 radius
+user 60:a5:e2:18:78:ec 604a0ddc5752d7fdb973125afa53aa9985646b5ccca782d06e91fc339e526e22 radius
+user 64:16:66:40:eb:66 0d34d9386bea3bb0b0a01031ca59982de8e5af61b01b9f951facb0815a48d9f8 radius
+user 64:16:66:41:0e:57 14859f83dc66b8e8fc79d92bfe161c7d711bfc43a5c29d31c4a03bf437b82020 radius
+user 64:16:66:41:c4:01 79023c533f8e8d9b69f950e63c8278059dcd515ff2c65a1615aa18ae55867de8 radius
+user 68:72:c3:fb:45:14 0165965d3a523ce2ccb0b2502408c7a4c0a9630fee795f6e3901e96c50e4849c radius
+user 6e:de:27:96:22:66 fa2c4685530e28fb748ba16e4f5f8671f0587e8d35e1ddbb542e24ec12bae91f radius
+user 74:8f:3c:ba:92:e8 661093e1a799e01fd96a020d6c4df2788bb624e11cb752820d8b54ff7c1becc3 radius
+user 88:66:5a:01:cc:c8 9674773e88d0ba7cb9dbe529b9035786958f8c8027050e602ca4306e545336d6 radius
+user 88:66:5a:04:3d:c4 b1880a8b0e761593267f231d38ba08b52678961f9848f49287ec0588b34b0dbb radius
+user 88:66:5a:0f:64:e5 abcb168d5fec5b4553c50f4aecb9f1f01b2538dc0dbd1ee59bedf42188dcfb30 radius
+user 88:66:5a:0f:6d:5c 360c11a4536160c1c04352df023a1e72fb0e506efe5813d454718fd88d439414 radius
+user 88:66:5a:11:53:2b 018749af5268c6fa36ce9e957228f0cd187659c51698f0b7f2b8bbb8ad4622ca radius
+user 88:66:5a:14:0e:1a bc9ea42956ac7ea271eab13184c1972682e98b72967708f34be4a6dae70fcb93 radius
+user 88:66:5a:15:6f:f7 e2565833bf02c19dddb1e2b12eafabbde796147c049cfcd3e5e9cfce3fad9727 radius
+user 88:66:5a:16:a0:6b 4d1bca31a6b92824c5aedca1483e02c05ecf26191f7600e0987ed52e7caa5c6c radius
+user 88:66:5a:1e:c1:d4 7f80af7cdc01ac300927660c42e9ee6332a9f023a5017090f7c58c000cf92495 radius
+user 88:66:5a:36:7e:44 810fe38ed673c9aa75e9fe42ee378dea8076b75c2baf2c8651ed5e8d827eda9a radius
+user 88:66:5a:38:31:68 56e6aeb65c02302bd348f15c576af65815c1dc8ec7d91188b01fda63b255c9b3 radius
+user 88:66:5a:3f:09:f7 30b842c098ab8ddcde4c6ddc533b0dcff9f6841bf90277c5ed22feccde5539fd radius
+user 88:66:5a:3f:8c:99 4a970500608dc78c60f8f731e5f6d4648eee15d835bf8552d773f7969df9580c radius
+user 88:66:5a:3f:b6:42 fef292e66ef1ad4dbab3e303c8ca91b1b6f39e41d7a45960daaec88f595c646a radius
+user 88:66:5a:44:ee:21 7438c25030fbfd804c8c1f4da6dbb106e9d7efefc9936d990cefb2a049842afc radius
+user 88:66:5a:4d:6a:bb d4eb279e040834847f720cc4e9b00ab7b66d75d0cd12675eb09bfed652e24397 radius
+user a8:a1:59:76:42:35 7da8ba1ee0e17a6d4b44451251c0d68b515f7c856856a731caf571dea06944ee radius
+user bc:9f:e4:cb:78:d9 9ed571553b2bc2dc6ec348c2558a2d962f6aaa08f733429696f03166eea7e8b2 radius
+user bc:9f:e4:cb:77:56 bc8937f07271489c52839c2cdef2640bedb76a31772c04f3731d7a225585138e radius
+user bc:9f:e4:cb:67:de f431515ac21b7d09690aff65ba149aecc9d390b68005f0f33a625845f73671a5 radius
+user bc:9f:e4:cb:63:97 7dede1ff2af69f9e9607184e3c5904b7d80fcbadf1a369bd2c166a53c4b1ee73 radius
+user bc:9f:e4:cb:62:08 7e624bc88d980a445a5caa63e6990e49acf27a18fcd93daea8ab8bafb77247e5 radius
+user bc:9f:e4:cb:77:62 ce13991551041711141a3fc202337088eadc8bdaae927b07b5ad598f8907ab11 radius
+user 88:66:5a:44:f8:24 8cd4c0af08c3cc4cf81c6bf503125bf6f9edb20f7e832ebab5aed9a11d23db0b radius
+user 88:66:5a:4d:5c:f6 708ff60a2a7a6d21fb8a456ab686bf892edddd61600f1964edd390652eb3f80a radius
+user f8:e4:e3:01:d8:a3 6ed2a7ffa4aeb2480c89dc05cd8a58dc554e9154657636fe7b0b8c3ee95e11c7 radius
+user 60:f2:62:b6:21:c3 bfa7b075f0f03a6023549c7b7ef76f245f5ca6580e59fea0443140b20e6120fa radius
+user 34:cf:f6:b1:3e:33 cc4f7cbbddbd9bedd14045e6244649bb35c981953d2bc1741dbe8da01f14e0e1 radius
+user b8:9a:2a:25:7e:1b 2bce22f998fa324be30bba9dbe6a8fa6d67173e577e03194b86afc4189228818 radius
+user 8c:c6:81:e2:6f:80 176f2083159f6a3d9453f605f17f4423ce9f0f8560688d6b654877f35ea0cd47 radius
+user 34:cf:f6:b1:54:fe dda663ae06404ab4b52538212b996f0fb6fdf437c7d1bacd8dbee2ce03a3afcc radius
+user 60:f2:62:b6:69:08 cf501a6b5e3ab4e9a821d8b298903dc87c6db3be464048d34648d70f1d8808fe radius
+user 08:d2:3e:b7:78:ac c18751ca0a4c084b50353b4b59944201a9b90659f28b606ba6617d88ecd797ef radius
+user fc:44:82:a4:c7:43 ff7a2a3f61c1cb9c40bd008f29d64a3a9b79f6c14b2680cdea542d89f761409e radius
+user fc:44:82:a4:9f:5c 640361231ebf0967a6693473eaaef165191e0a8e88a69e9bd8f2f8311e825075 radius
+user 60:a5:e2:13:bd:7f 244e9f4a6dfc8929fe16fc97a03e446b4c01e1e630b1ba7843a4b3f441cd3480 radius
+user 60:a5:e2:19:3f:ed f16a925d311dd99338d8a1c0ca7487ca134c641ba1f3c5e823f5004ebe90495b radius
+user 60:a5:e2:13:bd:93 3d0d7279b71c903801b691b8269a57c12bd0bcd78f47bf303e7eb2f944d577d5 radius
+user 60:a5:e2:12:3e:64 cf9f9bddde0dab7ce51f992f2034228db3300e7dc70870b52ba37cb1ece4aa38 radius
+user 00:91:9e:4b:4c:ea 33b6a5fc4b2e425e73a5343aaab27acfd0c6b0e503a86c6ed030981c61e5b02e radius
+user 00:91:9E:61:A8:05 f91568ba9c4b62f9e589ca63f5d833854b1fcc01ff3565363a80e23b262117f0 radius
+user 00:91:9e:61:a7:ce 8962e223d93e59a02bb284cab8399471f0ec31ae3de2f73d0b33741c8b0e19ac radius
+user 00:91:9e:61:a8:f0 a6c94646a968ae460f8df0aa7385db8f9d0191bedd16c3ab458877f0d519fd8d radius
+user 00:91:9e:61:a7:d3 1e549f578de7bc4a1c11761e6c32a41f067efee2992c2c8cd3eb686eb1a43a2b radius
+user 00:91:9e:61:a5:62 8ee53d74b1af9d90f40e64596a79443d14a4744391eeb980c8440ce5628d64ba radius
+user 80:65:7c:ed:33:94 ba1eaf3f7d99abafea83c0624c62388e8f97ab221383701234b2497dad755aba radius
+user f4:a4:75:7c:93:54 7281456ec4d6106579f63d380c97ba5f8a8d17b27f1d854c23280891c7bcaf59 radius
+user f4:a4:75:7c:93:18 69f7e2b9c8b694f175bf0d7639b0d1a7f936aefc277ff60285e94337dbb797f0 radius
+user cc:15:31:ab:e5:4b d84e9d650a1487e522a96a5e2122a34372de5abf957a85fa98008fbfb851f927 radius
+user 60:f2:62:b6:3e:79 80929bab6bff28f496c31d973cf8646f1552473f4407bb9c0e8a72bbf4000643 radius
+
+
+
+hash-mgmt-password
+hash-mgmt-user admin password hash e0a975c902097338476a4ddd46db0815f64340b82b5bbbf18319fd169f7e9aa400d4750dee
+
+
+
+wlan access-rule default_wired_port_profile
+ index 0
+ rule any any match any any any permit
+
+wlan access-rule wired-SetMeUp
+ index 1
+ rule masterip 0.0.0.0 match tcp 80 80 permit
+ rule masterip 0.0.0.0 match tcp 4343 4343 permit
+ rule any any match udp 67 68 permit
+ rule any any match udp 53 53 permit
+
+wlan access-rule DerivTEST
+ index 2
+ rule any any match any any any permit
+
+wlan ssid-profile DerivTEST
+ enable
+ index 0
+ type employee
+ essid Deriv-Staff
+ wpa-passphrase 9c8f7959f87f4ff8b80b62af4a251f553c766eaebcdd5ed7
+ opmode wpa2-psk-aes
+ max-authentication-failures 0
+ auth-server InternalServer
+ rf-band all
+ captive-portal disable
+ mac-authentication
+ mac-authentication-delimiter :
+ mac-authentication-upper-case
+ dtim-period 1
+ broadcast-filter arp
+ dmo-channel-utilization-threshold 90
+ local-probe-req-thresh 0
+ max-clients-threshold 64
+
+auth-survivability cache-time-out 24
+
+
+
+wlan external-captive-portal
+ server localhost
+ port 80
+ url "/"
+ auth-text "Authenticated"
+ auto-whitelist-disable
+ https
+
+
+blacklist-time 3600
+auth-failure-blacklist-time 3600
+
+
+ids
+ wireless-containment none
+
+
+wired-port-profile wired-SetMeUp
+ switchport-mode access
+ allowed-vlan all
+ native-vlan guest
+ no shutdown
+ access-rule-name wired-SetMeUp
+ speed auto
+ duplex auto
+ no poe
+ type guest
+ captive-portal disable
+ no dot1x
+
+wired-port-profile default_wired_port_profile
+ switchport-mode trunk
+ allowed-vlan all
+ native-vlan 1
+ shutdown
+ access-rule-name default_wired_port_profile
+ speed auto
+ duplex full
+ no poe
+ type employee
+ captive-portal disable
+ no dot1x
+
+
+enet0-port-profile default_wired_port_profile
+
+uplink
+ preemption
+ enforce none
+ failover-internet-pkt-lost-cnt 10
+ failover-internet-pkt-send-freq 30
+ failover-vpn-timeout 180
+
+
+
+airgroup
+ disable
+
+airgroupservice airplay
+ disable
+ description AirPlay
+
+airgroupservice airprint
+ disable
+ description AirPrint
+
+
+
+
+
+cluster-security
+ allow-low-assurance-devices
